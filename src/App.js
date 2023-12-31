@@ -66,13 +66,13 @@ function App() {
             </div>        
             <div className='row mt-4'>
                <Nav className='d-flex justify-content-center align-items-center mt-5'>
-                 <NavLink>
+                 <NavLink href='https://www.instagram.com/kyaloo__/'>
                      <img className='m-1' src={InstagramBTN} alt='img'></img>
                  </NavLink>
-                 <NavLink>
+                 <NavLink href='https://github.com/edwinngila'>
                      <img className='m-1' src={GithubBTN} alt='img'></img>
                  </NavLink>
-                 <NavLink>
+                 <NavLink href='https://wa.me/+254704922743'>
                      <img className='m-1' src={WhatsappBTN} alt='img'></img>
                  </NavLink>
               </Nav>
