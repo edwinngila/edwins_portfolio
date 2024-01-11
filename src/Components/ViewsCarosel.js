@@ -20,10 +20,10 @@ const ViewCarousel=()=>{
     return(
         <>
             <Slider ref={carouselRef} {...settings}>
-               <HomePage index={1}/>
-               <AboutPage index={2}/>
-               <ContactMePage index={3}/>
-               <ProjectsPage index={4}/>
+                <HomePage index={1}/>
+                <AboutPage index={2}/>
+                <ContactMePage index={3}/>
+                <ProjectsPage index={4}/>
             </Slider>
         </>
     )
