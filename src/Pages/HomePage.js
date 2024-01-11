@@ -9,7 +9,7 @@ const HomePage=({index,...props})=>{
     return(
         <Container {...props} fluid>
         <div style={{height:"100vh"}} className='row d-flex justify-content-center align-items-center'>
-               <div className='col-6'>
+               <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
                     <p style={{fontWeight:"700",fontSize:"50px",margin:"0px"}} className='text-light'>Hi,</p>
                     <p style={{fontWeight:"700",fontSize:"50px",margin:"0px"}} className='text-light'>I'm Edwin,</p>
                     <p style={{fontWeight:"700",fontSize:"50px",margin:"0px"}} className='text-light'>A Software Developer.</p>
@@ -31,8 +31,8 @@ const HomePage=({index,...props})=>{
                         } 
                      variant="outlined">Contact Me</Button>
                </div>
-               <div className='col-6'>
-                   <img src={HomeIcon} alt="img"></img>
+               <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-start-0 '>
+                   <img className="" src={HomeIcon} alt="img"></img>
                </div>
             </div>
         </Container>
