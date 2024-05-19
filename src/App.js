@@ -15,7 +15,8 @@ import ViewCarousel from './Components/ViewsCarosel';
 import { useRef, useState } from 'react';
 import { CarouselShow, SnackTost } from './UseContext/Hooks';
 import SimpleSnackbar from './screenPopups/SnackBar';
-import '../src/css/NavigationBar.css'
+import '../src/css/NavigationBar.css';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -79,7 +80,7 @@ function App() {
                 </Nav>
               </div>        
           </div>
-          <div style={{height:"100vh",backgroundColor:"#171717"}} className="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 col-xxl-11">
+          <div style={{backgroundColor:"#171717"}} className="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 col-xxl-11">
                 <ViewCarousel/>
           </div>
         </div>

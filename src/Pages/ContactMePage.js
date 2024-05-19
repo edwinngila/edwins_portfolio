@@ -36,14 +36,14 @@ const ContactMePage=({index,...props})=>{
     }
 
     return(
-        <Container className="text-light mt-3" {...props}>
+        <Container style={{zIndex:"-1"}} fluid className="text-light" {...props}>
                 <div className='row'>
                     <div className='col-12 mt-3 d-flex align-items-center justify-content-center flex-column'>
                         <h1 style={{fontWeight:'700'}}>Contact us through</h1>
                         <h5>If you are interested with working with us you can live your information bellow</h5>
                     </div>
                 </div>
-                <div className='row mt-1 text-black'>
+                <div className='row mt-1 text-black d-flex justify-content-center'>
                     <div className='col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 p-3 p-sm-3 p-md-4 p-lg-4 p-xl-4 contactUs'>
                         <div className='row mt-5'>
                             <div style={{color:"white",backgroundColor:"transparent",borderRadius:"20px",border:"2px solid #00ffff"}} className='col-12 col-sm-12 col-md-12 col-lg-11 col-xl-10 p-4 d-flex align-items-center justify-content-center flex-column'>
@@ -60,11 +60,12 @@ const ContactMePage=({index,...props})=>{
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 p-2 p-sm-5 p-md-5 p-lg-5 p-xl-5'>
-                        <Form ref={form} onSubmit={contactDetails}>
+                    <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-2 p-sm-5 p-md-5 p-lg-5 p-xl-5'>
+                        <Form ref={form} onSubmit={(e)=>{contactDetails(e)}}>
                             <div className='row d-flex justify-content-center align-items-center'>
                                 <h3 className="text-light" style={{textAlign:"center"}}>Enter your details for contact</h3>
                             </div>
+                            <div className="mt-2">
                                 <FormGroup>
                                     <TextField  
                                         InputLabelProps={{
@@ -81,7 +82,7 @@ const ContactMePage=({index,...props})=>{
                                         id="outlined-basic" name='user_name' label="Full Name" variant="outlined" value={FullName} onChange={(e)=>{setFullName(e.target.value)}}/>
                                 </FormGroup>
                                 
-                                <FormGroup>
+                                <FormGroup className='mt-2'>
                                    <TextField 
                                         InputLabelProps={{
                                         style: { color: 'white' },
@@ -95,35 +96,36 @@ const ContactMePage=({index,...props})=>{
                                       color="primary" style={{color:"white"}} focused fullWidth id="outlined-basic" label="Email" variant="outlined" onChange={(e)=>{setEmail(e.target.value)}}/>
                                 </FormGroup>
 
-                            <FormGroup className='mt-4'>
-                                <TextField 
-                                  InputLabelProps={{
-                                        style: { color: 'white' },
-                                        }}
-                                  InputProps={{
+                                <FormGroup className='mt-4'>
+                                    <TextField 
+                                    InputLabelProps={{
                                             style: { color: 'white' },
-                                        }}
-                                    id="outlined-multiline-static"
-                                    label="Message"
-                                    fullWidth
-                                    multiline
-                                    color="primary" focused
-                                    value={Message}
-                                    name="message"
-                                    style={{color:"white"}}
-                                    onChange={
-                                    (e)=>{
-                                        setWordCount((e.target.value).length)
-                                        setMessages(e.target.value)
+                                            }}
+                                    InputProps={{
+                                                style: { color: 'white' },
+                                            }}
+                                        id="outlined-multiline-static"
+                                        label="Message"
+                                        fullWidth
+                                        multiline
+                                        color="primary" focused
+                                        value={Message}
+                                        name="message"
+                                        style={{color:"white"}}
+                                        onChange={
+                                        (e)=>{
+                                            setWordCount((e.target.value).length)
+                                            setMessages(e.target.value)
+                                        }
                                     }
-                                   }
-                                rows={4} placeholder='Type your text here...' maxLength={500}/>
-                                <span className='me-end text-white'>Words:{wordCont}/500</span>
-                            </FormGroup>
+                                    rows={4} placeholder='Type your text here...' maxLength={500}/>
+                                    <span className='me-end text-white'>Words:{wordCont}/500</span>
+                                </FormGroup>
 
-                            <FormGroup className='row d-flex align-items-center justify-content-center'>
-                                <Button className="col-3 mt-3" size='md' style={{backgroundColor:'#f60e60',border:"none",color:"white"}} type="submit">Submit</Button>
-                            </FormGroup>
+                                <FormGroup className='row d-flex align-items-center justify-content-center'>
+                                    <Button className="col-3 mt-3" size='md' style={{backgroundColor:'#f60e60',border:"none",color:"white"}} type="submit">Submit</Button>
+                                </FormGroup>
+                            </div>
                         </Form>
                     </div>
                 </div>

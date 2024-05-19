@@ -16,9 +16,10 @@ const HomePage=({index,...props})=>{
                     <p style={{color:"#f1f1f1"}}>Frontend Dev / Backend Dev/ Android Dev</p>
                     <Button
                      onClick={
-                        ()=>{
-                          goToSlide(2)
-                        }}
+                          ()=>{
+                            goToSlide(2)
+                          }
+                        }
                      className='mt-3' 
                      sx={
                             {
