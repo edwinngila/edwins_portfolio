@@ -79,8 +79,8 @@ const ContactMePage=({index,...props})=>{
                                         fullWidth 
                                         className="mt-3"
                                         id="outlined-basic" name='user_name' label="Full Name" variant="outlined" value={FullName} onChange={(e)=>{setFullName(e.target.value)}}/>
-
                                 </FormGroup>
+                                
                                 <FormGroup>
                                    <TextField 
                                         InputLabelProps={{
@@ -90,10 +90,11 @@ const ContactMePage=({index,...props})=>{
                                             style: { color: 'white' },
                                         }}
                                         className="mt-3"
-                                    type="email"
+                                      type="email"
                                       name="user_email"
-                                      color="primary" style={{color:"white"}} focused fullWidth id="outlined-basic" label="Email" variant="outlined" value={Email} onChange={(e)=>{setEmail(e.target.value)}}/>
+                                      color="primary" style={{color:"white"}} focused fullWidth id="outlined-basic" label="Email" variant="outlined" onChange={(e)=>{setEmail(e.target.value)}}/>
                                 </FormGroup>
+
                             <FormGroup className='mt-4'>
                                 <TextField 
                                   InputLabelProps={{
@@ -119,6 +120,7 @@ const ContactMePage=({index,...props})=>{
                                 rows={4} placeholder='Type your text here...' maxLength={500}/>
                                 <span className='me-end text-white'>Words:{wordCont}/500</span>
                             </FormGroup>
+
                             <FormGroup className='row d-flex align-items-center justify-content-center'>
                                 <Button className="col-3 mt-3" size='md' style={{backgroundColor:'#f60e60',border:"none",color:"white"}} type="submit">Submit</Button>
                             </FormGroup>

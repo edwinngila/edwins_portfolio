@@ -80,9 +80,6 @@ function App() {
               </div>        
           </div>
           <div style={{height:"100vh",backgroundColor:"#171717"}} className="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 col-xxl-11">
-                <div className='row'>
-                  hi
-                </div>
                 <ViewCarousel/>
           </div>
         </div>
