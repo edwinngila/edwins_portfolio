@@ -1,0 +1,10 @@
+@media only screen and (max-width:767px){
+    .Home-img{
+        width:260px;
+        height:325px;
+        background-size: cover;
+        background-position: center;
+        zoom: 1;
+        display: no;
+    }
+}
