@@ -1,10 +1,12 @@
+.Home-img{
+    width:500px;
+    height:500px;
+}
 @media only screen and (max-width:767px){
     .Home-img{
-        width:260px;
-        height:325px;
+        width:150px;
+        height:150px;
         background-size: cover;
         background-position: center;
-        zoom: 1;
-        display: no;
     }
 }
