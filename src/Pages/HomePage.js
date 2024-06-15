@@ -33,7 +33,7 @@ const HomePage=({index,...props})=>{
                      variant="outlined">Contact Me</Button>
                </div>
                <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0 d-flex justify-content-start-0 '>
-                   <img width={"380px"} height={"380px"} className="Home-img" src={HomeIcon} alt="img"></img>
+                   <img width={"360px"} height={"360px"} className="Home-img" src={HomeIcon} alt="img"></img>
                </div>
             </div>
         </Container>
