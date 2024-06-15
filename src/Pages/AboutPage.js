@@ -14,12 +14,35 @@ import NODE from '../Img/nodejs.png';
 import REACT from '../Img/react.png';
 import ANDROID from '../Img/android.png';
 import PROFILEimg from '../Img/prof2.jpg';
+import ContinuousBelt from "../Components/ContinuersBelt";
+import "../css/About.css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Avatar } from "@mui/material";
 
 const AboutPage=({index,...props})=>{
+    const images = [
+        CSS,
+        BOOTSTRAP,
+        MATIRIALUI,
+        JAVASCRIPT,
+        VUE,
+        MONGODB,
+        ANDROID,
+        MYSQL,
+        EXPRESS,
+        PHP,
+        LARAVEL,
+        REACT,
+        NODE,
+        HTML5
+      ];
     return(
         <Container fluid {...props}>
             <div className="row">
-                <div className="col-7 align-items-center text-light">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 d-flex justify-content-center align-content-center">
+                     <img className="mt-5 About-img" src={PROFILEimg} alt="PROFILEimg"></img>
+                </div>
+                <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 align-items-center text-light mt-5">
                     <p className="mt-5" style={{fontSize:"18px"}}>
                        I am a proficient software developer with expertise in web development, specializing in both front-end and back-end technologies. On the front-end, I excel in utilizing HTML, CSS, and JavaScript, complemented by frameworks including Bootstrap, ReactJS, and VueJS. I am adept at incorporating libraries such as Google Material UI to enhance the user interface.
                     </p>
@@ -29,55 +52,14 @@ const AboutPage=({index,...props})=>{
                     <p style={{fontSize:"18px"}}>
                          Furthermore, I possess proficiency in Android development, utilizing Kotlin and Jetpack Compose to craft sophisticated and user-friendly Android applications. With a keen eye for detail and a commitment to staying abreast of the latest industry trends, I ensure the delivery of cutting-edge solutions that exceed client expectations.
                     </p>
-                    <div className="row mt-5">
-                        <div className="col-1">
-                            <img src={HTML5} alt="HTML5"></img>
-                        </div>
-                        <div className="col-1">
-                            <img width={"32px"} height={"32px"} src={CSS} alt="CSS"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={BOOTSTRAP} alt="BOOTSTRAP"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={MATIRIALUI} alt="MATIRIALUI"></img> 
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={JAVASCRIPT} alt="JAVASCRIPT"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={VUE} alt="VUE"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={MONGODB} alt="MONGODB"></img>
-                        </div>
+                    <div className="row">
+                         <ContinuousBelt
+                            images={images}
+                            beltWidth={20}
+                            beltHeight={20}
+                            speed={3}
+                         />
                     </div>
-                    <div className="row mt-4">
-                        <div className="col-1">
-                            <img width={"32px"} height={"32px"} src={ANDROID} alt="ANDROID"></img>
-                        </div>
-                        <div className="col-1">
-                            <img width={"32px"} height={"32px"} src={MYSQL} alt="MYSQL"></img>
-                        </div>
-                        <div className="col-3">
-                           <img style={{objectFit: 'cover'}} width={"150px"} height={"32px"} src={EXPRESS} alt="EXPRESS"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={PHP} alt="PHP"></img> 
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={LARAVEL} alt="LARAVEL"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={REACT} alt="REACT"></img>
-                        </div>
-                        <div className="col-1">
-                           <img width={"32px"} height={"32px"} src={NODE} alt="NODE"></img>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-5">
-                     <img style={{borderRadius:"20px"}} className="mt-5" width={"480px"} height={"585px"} src={PROFILEimg} alt="PROFILEimg"></img>
                 </div>
             </div>
         </Container>

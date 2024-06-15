@@ -1,9 +1,22 @@
+.Top-Navigation-Bar{
+    display: none;
+}
 @media only screen and (max-width:767px){
     .Navigation-Bar{
         display: none;
+    }
+    .Top-Navigation-Bar{
+        display: inline-block;
+    }
+    .About-img{
+        
     }
 }
 
 body{
     background-color:#171717 ;
+}
+.MuiDrawer-paperAnchorTop{
+    background-color:#101010 !important;
+    color: white !important;
 }

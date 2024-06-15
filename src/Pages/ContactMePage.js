@@ -123,7 +123,7 @@ const ContactMePage=({index,...props})=>{
                                 </FormGroup>
 
                                 <FormGroup className='row d-flex align-items-center justify-content-center'>
-                                    <Button className="col-3 mt-3" size='md' style={{backgroundColor:'#f60e60',border:"none",color:"white"}} type="submit">Submit</Button>
+                                    <Button className="col-5 col-lg-5 col-md-5 col-lg-5 col-xl-5 mt-3" size='md' style={{backgroundColor:'#f60e60',border:"none",color:"white"}} type="submit">Submit</Button>
                                 </FormGroup>
                             </div>
                         </Form>

@@ -9,7 +9,7 @@ import vaultguard from '../Img/Screenshot 2024-05-19 133020.jpg';
 const ProjectsPage=({index,...props})=>{
     return(
         <Container className="d-flex align-items-center justify-content-center align-content-center" fluid {...props}>
-           <div style={{justifyContent:"center",alignContent:"center",alignItems:"center"}} className="row d-flex align-content-center align-items-center justify-content-center ">
+           <div style={{justifyContent:"center",alignContent:"center",alignItems:"center"}} className="row d-flex align-content-center align-items-center justify-content-center mt-4">
            
                <div className="col-12 col-md-4 col-lg-4 mt-3 d-flex align-items-center justify-content-center align-content-center">
                  <Card sx={{ maxWidth: 320 , backgroundColor:"#171717",borderRadius:"10px",border:"2px solid #00ffff"}}>

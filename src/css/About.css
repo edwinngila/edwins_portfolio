@@ -1,0 +1,15 @@
+.About-img{
+    width:480px;
+    height:585px;
+    border-radius: 20px;
+}
+@media only screen and (max-width:767px){
+    .About-img{
+        width:260px;
+        height:325px;
+        background-size: cover;
+        background-position: center;
+        zoom: 1;
+        display: no;
+    }
+}

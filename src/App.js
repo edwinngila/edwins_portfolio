@@ -42,8 +42,8 @@ function App() {
      <SnackTost.Provider value={snackBarValues}>
       <SimpleSnackbar/>
       <CarouselShow.Provider value={carousel}>
-        <div style={{height:"100vh"}} className="row">
-          <div style={{height:"100vh",backgroundColor:"#101010"}} className="col-1 Navigation-Bar">
+        <div style={{minHeight:"100vh"}} className="row">
+          <div style={{minHeight:"100vh",backgroundColor:"#101010"}} className="col-1 Navigation-Bar">
               <div className='row'>
                   <img src={LogoOne} alt='img'></img>
               </div>    
@@ -81,7 +81,7 @@ function App() {
               </div>        
           </div>
           <div style={{backgroundColor:"#171717"}} className="col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11 col-xxl-11">
-                <ViewCarousel/>
+            <ViewCarousel/>
           </div>
         </div>
       </CarouselShow.Provider>
