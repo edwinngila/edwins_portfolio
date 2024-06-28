@@ -13,6 +13,7 @@ import MailBTN from '../Img/email (4).png'
 import InstagramBTN from '../Img/instagram (2).png'
 import GithubBTN from '../Img/github.png'
 import WhatsappBTN from '../Img/whatsapp (2).png'
+import LinkedIn from '../Img/linkedin.png'
 import CV from '../Img/cv (2).png';
 import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, colors } from "@mui/material";
 import LogoOne from '../Img/android-chrome-192x192.png';
@@ -135,6 +136,13 @@ const ViewCarousel=()=>{
                           <img className='m-1' src={GithubBTN} alt='img'></img>
                         </ListItemIcon>
                        <ListItemText primary="github"/>
+                   </ListItemButton>
+                   
+                   <ListItemButton href='https://www.linkedin.com/in/edwin-kyalo-73ab08294/'>
+                        <ListItemIcon>
+                          <img className='m-1' src={LinkedIn} alt='img'></img>
+                        </ListItemIcon>
+                       <ListItemText primary="LinkedIn"/>
                    </ListItemButton>
                    
                    <ListItemButton href='https://wa.me/+254704922743'>
