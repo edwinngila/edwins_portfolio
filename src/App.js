@@ -8,6 +8,7 @@ import MailBTN from '../src/Img/email (4).png'
 import InstagramBTN from '../src/Img/instagram (2).png'
 import GithubBTN from '../src/Img/github.png'
 import WhatsappBTN from '../src/Img/whatsapp (2).png'
+import LinkedIn from './Img/linkedin.png'
 import CV from '../src/Img/cv (2).png';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -66,13 +67,16 @@ function App() {
                   </NavLink>
                 </Nav>
               </div>        
-              <div className='row mt-4'>
+              <div className='row mt-2'>
                 <Nav className='d-flex justify-content-center align-items-center mt-5'>
                   <NavLink href='https://www.instagram.com/kyaloo__/'>
                       <img className='m-1' src={InstagramBTN} alt='img'></img>
                   </NavLink>
                   <NavLink href='https://github.com/edwinngila'>
                       <img className='m-1' src={GithubBTN} alt='img'></img>
+                  </NavLink>
+                  <NavLink href='https://www.linkedin.com/in/edwin-kyalo-73ab08294/'>
+                      <img className='m-1' src={LinkedIn} alt='img'></img>
                   </NavLink>
                   <NavLink href='https://wa.me/+254704922743'>
                       <img className='m-1' src={WhatsappBTN} alt='img'></img>
