@@ -117,7 +117,7 @@ const ViewCarousel=()=>{
                        <ListItemText primary="Contact me"/>
                    </ListItemButton>
 
-                   <ListItemButton href="https://drive.google.com/file/d/1Yn1Uc5l0NWJflBtuFxIMqcgUa9WURfg7/view?usp=sharing">
+                   <ListItemButton href="https://drive.google.com/file/d/1iHMtZywOUieSmcq8pCyhatoUfswhwnoS/view?usp=sharing">
                         <ListItemIcon>
                           <img src={CV} alt='img'></img>
                         </ListItemIcon>
@@ -137,8 +137,15 @@ const ViewCarousel=()=>{
                         </ListItemIcon>
                        <ListItemText primary="github"/>
                    </ListItemButton>
+
+                   <ListItemButton href='https://github.com/edwinkimani'>
+                        <ListItemIcon>
+                          <img className='m-1' src={GithubBTN} alt='img'></img>
+                        </ListItemIcon>
+                       <ListItemText primary="github"/>
+                   </ListItemButton>
                    
-                   <ListItemButton href='https://www.linkedin.com/in/edwin-kyalo-73ab08294/'>
+                   <ListItemButton href='https://www.linkedin.com/in/edwin-ngila?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/'>
                         <ListItemIcon>
                           <img className='m-1' src={LinkedIn} alt='img'></img>
                         </ListItemIcon>

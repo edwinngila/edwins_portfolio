@@ -1,7 +1,7 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { Container } from "react-bootstrap"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import contribution from '../Img/contribution.jpg'
+import contribution from '../Img/feedback.png'
 import jiranisRestaurant from '../Img/jiranisRestaurant.jpg'
 import stockPilot from '../Img/stockPilot.jpg';
 import vaultguard from '../Img/Screenshot 2024-05-19 133020.jpg';
@@ -62,14 +62,15 @@ const ProjectsPage=({index,...props})=>{
                     />
                     <CardContent>
                         <Typography className="text-light" gutterBottom variant="h6" component="div">
-                        Collaborations
+                        Feedback
                         </Typography>
                         <Typography className="text-light" variant="body2" color="text.secondary">
-                        My contribution to a project that i took part in,showing that i can work together with other people on projects 
+                        A way to give feedback on the work of other people in the institute of software technologies 
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button href="https://organization-mu.vercel.app/" style={{backgroundColor:"#F60E60"}}  className="col-12 text-light" endIcon={<OpenInNewIcon />}>view site</Button>
+                        <Button href="https://github.com/Institue-of-software-technologies/ist-feedback.git" style={{backgroundColor:"#F60E60"}}  className="col-12 text-light" endIcon={<OpenInNewIcon />}>view site</Button>
+                        <Button href="https://feedback.isteducation.com/" style={{backgroundColor:"#F60E60"}}  className="col-12 text-light" endIcon={<OpenInNewIcon />}>Git hub repository</Button>
                     </CardActions>
                   </Card>
                </div>
