@@ -62,7 +62,7 @@ function App() {
                   <NavLink onClick={()=>{goToSlide(2)}} className='m-2'>
                       <img src={MailBTN} alt='img'></img>
                   </NavLink>
-                  <NavLink href="https://drive.google.com/file/d/1Yn1Uc5l0NWJflBtuFxIMqcgUa9WURfg7/view?usp=sharing" className='m-2'>
+                  <NavLink href="https://drive.google.com/file/d/1iHMtZywOUieSmcq8pCyhatoUfswhwnoS/view?usp=sharing" className='m-2'>
                       <img src={CV} alt='img'></img>
                   </NavLink>
                 </Nav>
@@ -72,10 +72,10 @@ function App() {
                   <NavLink href='https://www.instagram.com/kyaloo__/'>
                       <img className='m-1' src={InstagramBTN} alt='img'></img>
                   </NavLink>
-                  <NavLink href='https://github.com/edwinngila'>
+                  <NavLink href='https://github.com/edwinkimani'>
                       <img className='m-1' src={GithubBTN} alt='img'></img>
                   </NavLink>
-                  <NavLink href='https://www.linkedin.com/in/edwin-kyalo-73ab08294/'>
+                  <NavLink href='https://www.linkedin.com/in/edwin-ngila?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/'>
                       <img className='m-1' src={LinkedIn} alt='img'></img>
                   </NavLink>
                   <NavLink href='https://wa.me/+254704922743'>

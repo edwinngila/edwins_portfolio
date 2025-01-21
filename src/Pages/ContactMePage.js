@@ -9,16 +9,13 @@ import { SnackTost } from "../UseContext/Hooks";
 const ContactMePage=({index,...props})=>{
     const form = useRef();
     const[wordCont,setWordCount]=useState(0);
-    const[FullName,setFullName]=useState();
-    const[Email,setEmail]=useState();
-    const[Message,setMessages]=useState();
     const{open,setOpen,setMessage,setSeverity}=useContext(SnackTost);
 
     const contactDetails=(e)=>{
         try {
             console.log(e.target.value);
             e.preventDefault();
-            emailjs.sendForm('service_gpf6aqr', 'template_ruyztt5', form.current, 'UxshDWNOLIxCpNCuz')
+            emailjs.sendForm('service_84pqyxg', 'template_ruyztt5', form.current,'WlTdTzwaJI9dcf3c_')
             .then((result) => {
                 e.target.reset();
                 setOpen(!open)
@@ -27,7 +24,7 @@ const ContactMePage=({index,...props})=>{
             }, (error) => {
                 setOpen(!open)
                 setMessage(error.text)
-                setSeverity("success")
+                setSeverity("error")
             });           
            
         } catch (error) {
@@ -79,7 +76,7 @@ const ContactMePage=({index,...props})=>{
                                         focused  
                                         fullWidth 
                                         className="mt-3"
-                                        id="outlined-basic" name='user_name' label="Full Name" variant="outlined" value={FullName} onChange={(e)=>{setFullName(e.target.value)}}/>
+                                        id="outlined-basic" name='user_name' label="Full Name" variant="outlined" />
                                 </FormGroup>
                                 
                                 <FormGroup className='mt-2'>
@@ -93,7 +90,7 @@ const ContactMePage=({index,...props})=>{
                                         className="mt-3"
                                       type="email"
                                       name="user_email"
-                                      color="primary" style={{color:"white"}} focused fullWidth id="outlined-basic" label="Email" variant="outlined" onChange={(e)=>{setEmail(e.target.value)}}/>
+                                      color="primary" style={{color:"white"}} focused fullWidth id="outlined-basic" label="Email" variant="outlined"/>
                                 </FormGroup>
 
                                 <FormGroup className='mt-4'>
@@ -109,13 +106,11 @@ const ContactMePage=({index,...props})=>{
                                         fullWidth
                                         multiline
                                         color="primary" focused
-                                        value={Message}
                                         name="message"
                                         style={{color:"white"}}
                                         onChange={
                                         (e)=>{
                                             setWordCount((e.target.value).length)
-                                            setMessages(e.target.value)
                                         }
                                     }
                                     rows={4} placeholder='Type your text here...' maxLength={500}/>
